@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(192, 192, 192);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 70px;
+             margin-bottom : 30px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+<div class="gallery-title">EVENT GALLARY</div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/2.jpg" alt="Image 1">
+            <div class="gallery-caption">Beautiful Birthday party</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/image2.jpg" alt="Image 2">
+            <div class="gallery-caption">wedding</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/image3.jpg" alt="Image 3">
+            <div class="gallery-caption">Nature Landscape</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/images6.jpg" alt="Image 4">
+            <div class="gallery-caption">wedding hall decoration</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/images5.jpg" alt="Image 1">
+            <div class="gallery-caption">many more</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/01.jpg" alt="Image 2">
+            <div class="gallery-caption">baby shower</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/dec.jpg" alt="Image 3">
+            <div class="gallery-caption">Event</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/dec2.jpg" alt="Image 4">
+            <div class="gallery-caption">Recipation</div>
+        </div>
+
+        <!-- Add more gallery items as needed -->
+
+    </div>
+
+</body>
+
+</html>
